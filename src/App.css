@@ -1,0 +1,54 @@
+.main-content {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 60px); 
+}
+
+:root {
+    --light-bg-color: #f0f0f0;
+    --light-text-color: #333;
+    --dark-bg-color: #2c3e50;
+    --dark-text-color: #fff;
+}
+
+.app {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Light mode */
+.app.light-mode {
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+}
+
+/* Dark mode */
+.app.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+.main-content {
+    display: flex;
+    flex: 1; 
+    overflow: hidden; 
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; 
+    }
+}
+
+@media (max-width: 768px) {
+    .loading-message {
+        display: none; 
+    }
+}
+
+

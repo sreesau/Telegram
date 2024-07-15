@@ -1,0 +1,27 @@
+.birthday-section {
+    display: flex;
+    width:100%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px; /* Adjust margin as needed */
+    margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+.birthday-icon {
+    margin-right: 10px;
+}
+
+.birthday-text {
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.close-icon {
+    cursor: pointer;
+    color: #999;
+    margin-left: auto; /* Push to the right */
+}
+
+.close-icon:hover {
+    color: #333;
+}

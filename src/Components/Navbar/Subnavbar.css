@@ -1,0 +1,65 @@
+.subnavbar {
+    display: flex;
+    justify-content: start; 
+    align-items: center; 
+    padding: 10px;
+    background-color: var(--subnavbar-bg-color);
+    color: var(--subnavbar-text-color);
+    border-bottom: 1px solid #ddd; 
+    margin-top: 0;
+}
+
+.subnavbar-item {
+    margin: 0 10px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    position: relative;
+}
+
+.subnavbar-item.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #5b96d1; 
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    right: 0;
+}
+
+.badge {
+    background-color:#5b96d1 ;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 10px; 
+}
+
+.app.dark-mode .subnavbar {
+    background-color: #2c3e50; /* Dark mode background color */
+    color: white; /* Dark mode text color */
+    border-bottom: 1px solid #34495e; /* Dark mode border color */
+}
+
+.app.dark-mode .subnavbar-item {
+    color: white; /* Dark mode item text color */
+}
+
+.app.dark-mode .subnavbar-item.active::after {
+    background-color: #3498db; /* Dark mode active indicator color */
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+}
+
+.app.dark-mode .badge {
+    background-color: #3498db; /* Dark mode badge background color */
+}
+
+.app.dark-mode .subnavbar-item:hover::after {
+    background-color: transparent; /* No hover effect for dark mode */
+}

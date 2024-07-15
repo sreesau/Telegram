@@ -1,0 +1,93 @@
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+
+  }
+  
+  .message-item {
+    max-width: 80%;
+    align-self: flex-start;
+    background-color: #dcf8c6;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .message-item .message-content {
+    word-wrap: break-word;
+  }
+  
+  .message-item .message-sender {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .message-item.sent {
+    align-self: flex-end;
+    background-color: #5b96d1;
+  }
+  
+  .message-item.sent .message-content {
+    color: #000;
+  }
+  
+  .message-item.sent .message-sender {
+    color: #5b96d1;
+  }
+  
+  .message-timestamp {
+    font-size: 0.8rem;
+    color: #5b96d1;
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+  .message-input {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.message-input textarea {
+    flex: 1;
+    min-height: 40px;
+    resize: none;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+  
+  /* Dark mode */
+  .app.dark-mode  .chat-messages {
+    background-color:#2c3e50;
+  }
+  
+  .app.dark-mode .message-item {
+    background-color: #333;
+  }
+  
+  .app.dark-mode  .message-item.sent {
+    background-color: #555;
+  }
+  
+   .mes.app.dark-mode sage-item .message-content {
+    color:#5b96d1;
+  }
+  
+  .app.dark-mode  .message-item .message-sender {
+    color: #5b96d1;
+  }
+  
+  .app.dark-mode .message-timestamp {
+    color: #999;
+  }
+  
